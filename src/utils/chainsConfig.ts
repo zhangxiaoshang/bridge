@@ -254,7 +254,9 @@ export const getAssetChainsConfig = (asset: Asset, nullForNotFound = false) => {
   }
   return {
     lockChain: info.lockChain,
-    mintChains: info.mintChains,
+    mintChains: info.mintChains.filter(
+      (chain) => chain === "BinanceSmartChain" // only BinanceSmartChain
+    ),
     lockChainConnectionRequired: info.lockChainConnectionRequired,
   } as AssetChainsConfig;
 };
