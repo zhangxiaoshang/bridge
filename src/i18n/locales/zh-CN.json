@@ -184,5 +184,6 @@
   "mint.gateway-expired-label": "已过期",
   "navigation.report-an-issue-label": "报告一个问题",
   "release.confirmed-label": "已确认",
-  "tx.address-error-popup-back-to-home": "返回首页"
+  "tx.address-error-popup-back-to-home": "返回首页",
+  "release.release-label": "发布"
 }

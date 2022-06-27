@@ -174,13 +174,13 @@ export const MainLayout: FunctionComponent<MainLayoutVariantProps> = ({
           mode="dialog"
           buttonClassName={styles.desktopLanguage}
         />
-        <ClosableMenuIconButton
+        {/* <ClosableMenuIconButton
           Icon={TxHistoryIcon}
           opened={txHistoryOpened}
           className={styles.desktopTxHistory}
           onClick={handleTxHistoryToggle}
           title="Transaction History"
-        />
+        /> */}
         <WalletConnectionStatusButton
           onClick={handleWalletButtonClick}
           hoisted={(txHistoryOpened && showConnectedTxs) || walletButtonHoisted}
@@ -239,7 +239,7 @@ export const MainLayout: FunctionComponent<MainLayoutVariantProps> = ({
           chain={chain}
         />
       </ListItem>
-      <ListItem
+      {/* <ListItem
         divider
         className={styles.drawerListItem}
         button
@@ -252,14 +252,14 @@ export const MainLayout: FunctionComponent<MainLayoutVariantProps> = ({
           />
           <span>{t("menu.view-transactions-label")}</span>
         </Button>
-      </ListItem>
+      </ListItem> */}
       <ListItem
         className={classNames(
           styles.drawerListItem,
           styles.drawerFooterListItem
         )}
       >
-        <Footer mobile />
+        {/* <Footer mobile /> */}
       </ListItem>
     </Drawer>
   );
@@ -294,7 +294,7 @@ export const MainLayout: FunctionComponent<MainLayoutVariantProps> = ({
       {children}
       <TransactionsHistory />
       <IssuesResolver />
-      <IssuesResolverButton mode="fab" />
+      {/* <IssuesResolverButton mode="fab" /> */}
       {/*<TransactionRecoveryButton />*/}
       <TransactionRecovery />
       <Debug
