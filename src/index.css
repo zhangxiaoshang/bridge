@@ -5,9 +5,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
   /* background-color: #8b77b6; */
-  background: url(./assets/backgrounds/background.png) no-repeat center / cover;
+  background-color: #000;
+  background-image: url(./assets/backgrounds/background.png);
+  background-repeat: no-repeat;
+  background-position: bottom right -100px;
+  background-size: 630px auto;
+
   position: relative;
   overflow: hidden;
+  height: 100vh;
 }
 body::before {
   z-index: -1000;
