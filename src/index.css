@@ -7,6 +7,7 @@ body {
   /* background-color: #8b77b6; */
   background: url(./assets/backgrounds/background.png) no-repeat center / cover;
   position: relative;
+  overflow: hidden;
 }
 body::before {
   z-index: -1000;
