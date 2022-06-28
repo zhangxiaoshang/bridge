@@ -253,14 +253,14 @@ export const MainLayout: FunctionComponent<MainLayoutVariantProps> = ({
           <span>{t("menu.view-transactions-label")}</span>
         </Button>
       </ListItem> */}
-      <ListItem
+      {/* <ListItem
         className={classNames(
           styles.drawerListItem,
           styles.drawerFooterListItem
         )}
       >
-        {/* <Footer mobile /> */}
-      </ListItem>
+        <Footer mobile />
+      </ListItem> */}
     </Drawer>
   );
 

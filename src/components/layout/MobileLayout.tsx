@@ -55,6 +55,9 @@ export const useMobileLayoutStyles = makeStyles((theme: Theme) => ({
     [theme.breakpoints.up("sm")]: {
       display: "none",
     },
+    "& svg": {
+      fill: "#fff",
+    },
   },
   mobileMenuButton: {
     padding: "0 0",
